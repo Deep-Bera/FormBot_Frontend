@@ -1,0 +1,185 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Container */
+.signUpContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+  color: white;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  /* border: 2px solid blue; */
+}
+
+.signUpForm {
+  height: 80vh;
+}
+
+/* Back Button */
+
+.backButton {
+  position: fixed;
+  top: 3rem;
+  left: 3rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
+}
+.backButton:hover {
+  text-decoration: underline;
+}
+
+/* Shapes */
+.shape {
+  position: absolute;
+  z-index: 1;
+}
+
+.triangle {
+  top: 10%;
+  left: 10%;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #ff7b00;
+}
+
+.circle1 {
+  bottom: 20%;
+  right: 15%;
+  width: 100px;
+  height: 100px;
+  background-color: #ffab00;
+  border-radius: 50%;
+}
+
+.circle2 {
+  top: 25%;
+  right: 10%;
+  width: 120px;
+  height: 120px;
+  background-color: #ffab00;
+  border-radius: 50%;
+}
+
+/* Form Styling */
+.signUpForm {
+  position: relative;
+  z-index: 2;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #000000;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  font-size: 14px;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid #555;
+  border-radius: 0.6rem;
+  outline: none;
+}
+
+.inputField::placeholder {
+  color: #888;
+}
+
+/* Buttons */
+.signUpButton {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #005eff;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0px 4px 6px 2px #e9444b40;
+}
+
+.signUpButton:hover {
+  box-shadow: 0 0 10px #005eff;
+}
+
+.googleSignInButton {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #005eff;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0px 4px 6px 2px #e9444b40;
+}
+
+.googleSignInButton:hover {
+  box-shadow: 0 0 10px #ff5555;
+}
+
+.googleIcon {
+  width: 20px;
+  height: 20px;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+
+/* OR Text */
+.orText {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Register Text */
+.registerText {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+.registerText a {
+  color: #005eff;
+  text-decoration: none;
+}
+
+.registerText a:hover {
+  text-decoration: underline;
+}
+
+.errorText {
+  color: #ff5555;
+  font-size: 1rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+}

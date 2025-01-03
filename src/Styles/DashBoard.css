@@ -1,0 +1,98 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* .main {
+  width: 70%;
+} */
+
+.app {
+  height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.app.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #202020;
+  border-bottom: 1px solid #333;
+}
+
+.header .user-info {
+  padding: 8px 12px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggle-container label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.toggle-container input[type="checkbox"] {
+  appearance: none;
+  width: 40px;
+  height: 20px;
+  background-color: #666;
+  border-radius: 10px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-container input[type="checkbox"]:checked {
+  background-color: #007bff;
+}
+
+.toggle-container input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+.toggle-container input[type="checkbox"]:checked::before {
+  transform: translateX(20px);
+}
+
+.share-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.share-button:hover {
+  background-color: #0056b3;
+}
