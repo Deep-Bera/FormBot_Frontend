@@ -49,7 +49,7 @@ const SignUp = () => {
     // Make API call to the backend
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/signup",
+        "https://formbot-backend-uxol.onrender.com/api/auth/signup",
         {
           username: formData.Username,
           email: formData.email,
